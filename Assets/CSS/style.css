@@ -1046,3 +1046,23 @@ footer h5 { color: #fff; }
     }
 }
 
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* spacing between items */
+}
+
+.countdown-timer div {
+  min-width: 70px; /* so numbers don’t squash */
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .countdown-timer {
+    gap: 10px;
+  }
+  .countdown-timer div {
+    min-width: 60px;
+  }
+}
